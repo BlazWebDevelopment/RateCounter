@@ -47,12 +47,18 @@
   .profile-btn img {
     transition: transform 0.2s;
   }
+
+  main {
+    margin-bottom: 100px;
+  }
 }
+
 @media only screen and (min-width: 992px) {
   .footer-wrapper {
     display: none;
   }
 }
+
 @media only screen and (min-width: 768px) {
   .footer-wrapper {
     display: none;
