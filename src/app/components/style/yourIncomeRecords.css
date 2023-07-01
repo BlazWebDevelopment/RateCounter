@@ -2,7 +2,7 @@
   .yourIncome-whoewrapper {
     margin: 20px auto;
     max-width: 400px;
-    color: black;
+    color: white;
     width: 300px;
     height: 150px;
     z-index: 10;
@@ -15,7 +15,7 @@
   }
 
   .yourIncome-wrapper {
-    border: 1px solid #f7f7f7;
+    border: 1px solid #474747;
     border-radius: 8px;
     background-color: #f7f7f7;
     padding: 10px;
@@ -50,7 +50,7 @@
   }
 
   .duration-text {
-    color: #777;
+    color: #8b8b8b;
     margin-left: 15px;
   }
   .duration-time {
@@ -130,7 +130,7 @@
     z-index: 10;
     margin: 20px auto;
     max-width: 700px;
-    color: black;
+    color: white;
     width: 300px;
     height: 150px;
     justify-content: center;
@@ -143,9 +143,9 @@
   }
 
   .yourIncome-wrapper {
-    border: 1px solid #f7f7f7;
+    border: 1px solid #2b2b2b;
     border-radius: 10px;
-    background-color: #f7f7f7;
+    background-color: #2b2b2b;
     height: 300px;
     box-shadow: 0px 5px 8px rgb(0, 0, 0);
     margin: 20px auto;
@@ -168,7 +168,7 @@
   }
 
   .duration-text {
-    color: #777;
+    color: #8b8b8b;
     margin-left: 15px;
   }
   .duration-time {
@@ -269,7 +269,7 @@
     z-index: 10;
     margin: 20px auto;
     max-width: 700px;
-    color: black;
+    color: white;
     width: 300px;
     height: 150px;
     justify-content: center;
@@ -282,9 +282,9 @@
   }
 
   .yourIncome-wrapper {
-    border: 1px solid #f7f7f7;
+    border: 1px solid #2b2b2b;
     border-radius: 10px;
-    background-color: #f7f7f7;
+    background-color: #2b2b2b;
     height: 300px;
     box-shadow: 0px 5px 8px rgb(0, 0, 0);
     margin: 20px auto;
@@ -307,7 +307,7 @@
   }
 
   .duration-text {
-    color: #777;
+    color: #8b8b8b;
     margin-left: 15px;
   }
   .duration-time {
