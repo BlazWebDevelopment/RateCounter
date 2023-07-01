@@ -52,8 +52,9 @@ function Session() {
     currentProfile,
   } = useContext(IncomeRecordsContext);
   const date = new Date();
-  const dateTime =
-    date.getDay() + "." + date.getMonth() + "." + date.getFullYear();
+  const month = date.getMonth() + 1;
+  const dateTime = date.getDate() + "." + month + "." + date.getFullYear();
+
   const [showAllSessions, setShowAllSessions] = useState(false);
 
   const findCurrentSession = user?.profiles.find(

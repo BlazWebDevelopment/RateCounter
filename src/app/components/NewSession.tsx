@@ -14,6 +14,7 @@ const NewSession: React.FC<NewSessionProps> = ({ isNewSession, onStart }) => {
   const { setSessionName, setSessionRate, sessionRate } =
     useContext(IncomeRecordsContext);
   const [isActive, setIsActive] = useState(false);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     if (isNewSession) {
@@ -24,6 +25,16 @@ const NewSession: React.FC<NewSessionProps> = ({ isNewSession, onStart }) => {
       setIsActive(false);
     }
   }, [isNewSession]);
+
+  const profileNameHandler = (e: any) => {
+    setSessionName(e.target.value);
+
+    if (e.target.value === "") {
+      setError(true);
+    } else {
+      setError(false);
+    }
+  };
 
   return (
     <>
@@ -36,7 +47,7 @@ const NewSession: React.FC<NewSessionProps> = ({ isNewSession, onStart }) => {
                 className="enteramount-input-name"
                 type="text"
                 placeholder="Session name"
-                onChange={(e) => setSessionName(e.target.value)}
+                onChange={profileNameHandler}
               />
               <p>Hourly rate:</p>
               <input
@@ -50,16 +61,34 @@ const NewSession: React.FC<NewSessionProps> = ({ isNewSession, onStart }) => {
                 onChange={(e) => setSessionRate(+e.target.value)}
               />
             </div>
-            <div onClick={onStart} className="start-stop-btn">
-              <button>START</button>
-              <Image
-                src={Play}
-                height={32}
-                width={32}
-                alt="play"
-                className="play-img"
-              />
-            </div>
+            {error ? (
+              <div
+                className={error ? "start-stop-btn-error" : "start-stop-btn"}
+              >
+                <button>START</button>
+                <Image
+                  src={Play}
+                  height={32}
+                  width={32}
+                  alt="play"
+                  className="play-img"
+                />
+              </div>
+            ) : (
+              <div
+                onClick={onStart}
+                className={error ? "start-stop-btn-error" : "start-stop-btn"}
+              >
+                <button>START</button>
+                <Image
+                  src={Play}
+                  height={32}
+                  width={32}
+                  alt="play"
+                  className="play-img"
+                />
+              </div>
+            )}
           </div>
         </div>
       )}

@@ -79,9 +79,21 @@
   }
 
   .start-stop-btn,
+  .start-stop-btn-error,
   .create-btn {
     display: flex;
     justify-content: center;
+  }
+  .start-stop-btn-error {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3f3f3f;
+    color: #fff;
+    margin: 0 auto;
+    cursor: pointer;
+    width: 150px;
   }
 
   .start-stop-btn {
@@ -121,6 +133,20 @@
   .play-img {
     margin-left: 20px;
   }
+  .create-btn-error {
+    display: flex;
+    justify-content: center;
+  }
+  .create-btn-error button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3f3f3f;
+    color: #fff;
+    margin: 0 5px;
+    cursor: pointer;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -132,6 +158,20 @@
     color: white;
     margin-top: 10px;
     margin-bottom: 20px;
+  }
+  .create-btn-error {
+    display: flex;
+    justify-content: center;
+  }
+  .create-btn-error button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3f3f3f;
+    color: #fff;
+    margin: 0 5px;
+    cursor: pointer;
   }
 
   .enteramount-insider {
@@ -202,6 +242,7 @@
   }
 
   .start-stop-btn,
+  .start-stop-btn-error,
   .create-btn {
     display: flex;
     justify-content: center;
@@ -219,6 +260,17 @@
     width: 150px;
   }
 
+  .start-stop-btn-error {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3f3f3f;
+    color: #fff;
+    margin: 0 auto;
+    cursor: pointer;
+    width: 150px;
+  }
   .create-btn button {
     padding: 10px 20px;
     font-size: 16px;
@@ -301,6 +353,20 @@
     outline: none;
     color: #15171b;
   }
+  .create-btn-error {
+    display: flex;
+    justify-content: center;
+  }
+  .create-btn-error button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3f3f3f;
+    color: #fff;
+    margin: 0 5px;
+    cursor: pointer;
+  }
 
   .rate-input {
     width: 110px;
@@ -319,9 +385,22 @@
   }
 
   .start-stop-btn,
+  .start-stop-btn-error,
   .create-btn {
     display: flex;
     justify-content: center;
+  }
+
+  .start-stop-btn-error {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3f3f3f;
+    color: #fff;
+    margin: 0 auto;
+    cursor: pointer;
+    width: 150px;
   }
 
   .start-stop-btn {
