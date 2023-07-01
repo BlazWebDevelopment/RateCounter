@@ -36,7 +36,7 @@ function ProfileSelect(props: any) {
 
   return (
     <div className="profileSelect-wrapper">
-      {user.profile.length === 0 ? null : (
+      {user?.profiles.length === 0 ? null : (
         <div className="profileSelect-btns">
           <button onClick={changeLeftHandler}>
             <Image
