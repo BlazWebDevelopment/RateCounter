@@ -7,7 +7,7 @@ const NewProfile = (props: any) => {
   const { setProfileName, profileName, isNewProfile } =
     useContext(IncomeRecordsContext);
   const [isActive, setIsActive] = useState(false);
-  const [error, setError] = useState(true); // Set initial value of error to true
+  const [error, setError] = useState(true);
 
   useEffect(() => {
     if (isNewProfile) {

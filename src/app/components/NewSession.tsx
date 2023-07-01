@@ -14,7 +14,7 @@ const NewSession: React.FC<NewSessionProps> = ({ isNewSession, onStart }) => {
   const { setSessionName, setSessionRate, sessionRate } =
     useContext(IncomeRecordsContext);
   const [isActive, setIsActive] = useState(false);
-  const [error, setError] = useState(false);
+  const [error, setError] = useState(true);
 
   useEffect(() => {
     if (isNewSession) {
