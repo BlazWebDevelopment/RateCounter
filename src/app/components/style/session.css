@@ -68,6 +68,22 @@
     margin-top: 20px;
     font-size: 32px;
   }
+  .ifnot-login {
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+  }
+  .ifnot-login-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+  }
+  .ifnot-login-btn button {
+    padding: 10px 20px 10px 20px;
+    background-color: #6f5adc;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px #000000;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -140,6 +156,22 @@
     margin-top: 20px;
     font-size: 32px;
   }
+  .ifnot-login {
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+  }
+  .ifnot-login-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+  }
+  .ifnot-login-btn button {
+    padding: 10px 20px 10px 20px;
+    background-color: #6f5adc;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px #000000;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -211,5 +243,21 @@
     justify-content: center;
     margin-top: 20px;
     font-size: 32px;
+  }
+  .ifnot-login {
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+  }
+  .ifnot-login-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+  }
+  .ifnot-login-btn button {
+    padding: 10px 20px 10px 20px;
+    background-color: #6f5adc;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px #000000;
   }
 }

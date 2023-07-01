@@ -6,7 +6,7 @@ import useSessionManagement from "@/hooks/useSessionManagement";
 import "./style/session.css";
 import useUser from "@/hooks/useUser";
 import { IncomeRecordsContext } from "../context/IncomeRecordsContext";
-import { useSession } from "next-auth/react";
+import { signIn, useSession } from "next-auth/react";
 import Image from "next/image";
 import YourIncomeRecords from "./YourIncomeRecords";
 import NewProfile from "./NewProfile";
@@ -64,77 +64,90 @@ function Session() {
 
   return (
     <div>
-      <div className="newProfilebtn-wrap">
-        <button
-          className={`newProfile-btn${isNewProfile ? "-active" : ""}`}
-          onClick={() => setIsNewProfile(!isNewProfile)}
-        >
-          {isNewProfile ? "Close" : " + New profile"}
-        </button>
-      </div>
-
-      {isNewProfile && <NewProfile createProfile={createProfile} />}
-      {user?.profiles.length === 0 ? (
-        <div className="zero-profiles">
-          <p>You have 0 profiles</p>
-        </div>
-      ) : (
-        <ProfileSelect />
-      )}
-      {user?.profiles.length !== 0 && (
+      {session && (
         <>
-          <div className="newSession-btn-wrap">
+          <div className="newProfilebtn-wrap">
             <button
-              className={`newSession-btn${isNewSession ? "-active" : ""}`}
-              onClick={() => setIsNewSession(!isNewSession)}
+              className={`newProfile-btn${isNewProfile ? "-active" : ""}`}
+              onClick={() => setIsNewProfile(!isNewProfile)}
             >
-              {isNewSession ? "Close" : " + New Session"}
+              {isNewProfile ? "Close" : " + New profile"}
             </button>
           </div>
-          <NewSession isNewSession={isNewSession} onStart={startNewSession} />
+          {isNewProfile && <NewProfile createProfile={createProfile} />}
+          {user?.profiles.length === 0 ? (
+            <div className="zero-profiles">
+              <p>You have 0 profiles</p>
+            </div>
+          ) : (
+            <ProfileSelect />
+          )}
+          {user?.profiles.length !== 0 && (
+            <>
+              <div className="newSession-btn-wrap">
+                <button
+                  className={`newSession-btn${isNewSession ? "-active" : ""}`}
+                  onClick={() => setIsNewSession(!isNewSession)}
+                >
+                  {isNewSession ? "Close" : " + New Session"}
+                </button>
+              </div>
+              <NewSession
+                isNewSession={isNewSession}
+                onStart={startNewSession}
+              />
+            </>
+          )}
+          {startedSession && (
+            <SessionView
+              seconds={seconds}
+              minutes={minutes}
+              hours={hours}
+              date={dateTime}
+              stopSession={stopTimer}
+              calculatedRate={calculatedRate}
+              saveIncomeRecord={saveIncomeRecord}
+              sessionName={sessionName}
+              isStop={isStop}
+              resume={resumeSession}
+            />
+          )}
+          {findCurrentSession &&
+            showSomeIncomeRecords.map((incomeRecord: IncomeRecords) => (
+              <YourIncomeRecords
+                key={incomeRecord.id}
+                id={incomeRecord.id}
+                name={incomeRecord.name}
+                money_collected={incomeRecord.money_collected}
+                date={incomeRecord.date}
+                rate={incomeRecord.rate}
+                time={incomeRecord.session_lasted}
+                start_time={incomeRecord.start_time}
+                end_time={incomeRecord.end_time}
+                removeIncomeRecord={removeYourIncomeRecord}
+              />
+            ))}
+          {findCurrentSession &&
+            findCurrentSession.incomeRecords.length > 2 &&
+            !showAllSessions && (
+              <div className="more-btn">
+                <Link href={`/profile/${session?.user?.name}`}>
+                  <button>More...</button>
+                </Link>
+              </div>
+            )}
         </>
       )}
-
-      {startedSession && (
-        <SessionView
-          seconds={seconds}
-          minutes={minutes}
-          hours={hours}
-          date={dateTime}
-          stopSession={stopTimer}
-          calculatedRate={calculatedRate}
-          saveIncomeRecord={saveIncomeRecord}
-          sessionName={sessionName}
-          isStop={isStop}
-          resume={resumeSession}
-        />
-      )}
-
-      {findCurrentSession &&
-        showSomeIncomeRecords.map((incomeRecord: IncomeRecords) => (
-          <YourIncomeRecords
-            key={incomeRecord.id}
-            id={incomeRecord.id}
-            name={incomeRecord.name}
-            money_collected={incomeRecord.money_collected}
-            date={incomeRecord.date}
-            rate={incomeRecord.rate}
-            time={incomeRecord.session_lasted}
-            start_time={incomeRecord.start_time}
-            end_time={incomeRecord.end_time}
-            removeIncomeRecord={removeYourIncomeRecord}
-          />
-        ))}
-
-      {findCurrentSession &&
-        findCurrentSession.incomeRecords.length > 2 &&
-        !showAllSessions && (
-          <div className="more-btn">
-            <Link href={`/profile/${session?.user?.name}`}>
-              <button>More...</button>
-            </Link>
+      {!session && (
+        <>
+          <div className="ifnot-login">
+            <p>Log in to track your rates</p>
           </div>
-        )}
+          <div className="ifnot-login-btn">
+            <button onClick={() => signIn("google")}>Log in</button>
+          </div>
+        </>
+      )}
     </div>
   );
 }

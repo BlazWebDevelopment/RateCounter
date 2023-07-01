@@ -31,7 +31,7 @@ function Navbar() {
               {session?.user ? (
                 <a onClick={() => signOut()}>Log out</a>
               ) : (
-                <a onClick={() => signIn()}>Log in</a>
+                <a onClick={() => signIn("google")}>Log in</a>
               )}
             </div>
           )}
