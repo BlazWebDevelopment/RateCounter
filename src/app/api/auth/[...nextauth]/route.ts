@@ -23,7 +23,7 @@ const authHandler = NextAuth({
         const newUser = new User({
           email: user.email,
           name: user.name,
-          profiles: [{}],
+          profiles: [],
         });
 
         await newUser.save();
