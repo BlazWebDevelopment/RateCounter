@@ -36,39 +36,41 @@ function ProfileSelect(props: any) {
 
   return (
     <div className="profileSelect-wrapper">
-      <div className="profileSelect-btns">
-        <button onClick={changeLeftHandler}>
-          <Image
-            src={index !== 0 ? left : None}
-            width={32}
-            height={32}
-            alt="left"
-          />
-        </button>
-        <TransitionGroup>
-          {index < length && (
-            <CSSTransition key={index} classNames="slide" timeout={300}>
-              <div className="profile-name-wrapper">
-                <button onClick={() => removeYourProfile(currentProfile)}>
-                  <Image src={Remove} height={16} width={16} alt="remove" />
-                </button>
-                <p className="profile">
-                  {user?.profiles?.[index]?.label || ""}
-                </p>
-              </div>
-            </CSSTransition>
-          )}
-        </TransitionGroup>
+      {user.profile.length === 0 ? null : (
+        <div className="profileSelect-btns">
+          <button onClick={changeLeftHandler}>
+            <Image
+              src={index !== 0 ? left : None}
+              width={32}
+              height={32}
+              alt="left"
+            />
+          </button>
+          <TransitionGroup>
+            {index < length && (
+              <CSSTransition key={index} classNames="slide" timeout={300}>
+                <div className="profile-name-wrapper">
+                  <button onClick={() => removeYourProfile(currentProfile)}>
+                    <Image src={Remove} height={16} width={16} alt="remove" />
+                  </button>
+                  <p className="profile">
+                    {user?.profiles?.[index]?.label || ""}
+                  </p>
+                </div>
+              </CSSTransition>
+            )}
+          </TransitionGroup>
 
-        <button onClick={changeRightHandler}>
-          <Image
-            src={index + 1 !== length ? right : None}
-            width={32}
-            height={32}
-            alt="right"
-          />
-        </button>
-      </div>
+          <button onClick={changeRightHandler}>
+            <Image
+              src={index + 1 !== length ? right : None}
+              width={32}
+              height={32}
+              alt="right"
+            />
+          </button>
+        </div>
+      )}
     </div>
   );
 }
