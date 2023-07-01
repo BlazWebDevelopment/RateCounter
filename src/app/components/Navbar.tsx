@@ -28,6 +28,7 @@ function Navbar() {
           {dropdown && (
             <div className="dropdown-content">
               <Link href={`/profile/${session?.user?.name}`}>Profile</Link>
+              <Link href={`/`}>Home</Link>
               {session?.user ? (
                 <a onClick={() => signOut()}>Log out</a>
               ) : (
