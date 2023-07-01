@@ -1,0 +1,359 @@
+@media screen and (max-width: 480px) {
+  .enteramount-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #18191a;
+    color: white;
+    margin-top: 10px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .enteramount-insider {
+    background-color: #1a1c22;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(156, 95, 255, 0.3);
+    position: absolute;
+    top: -100px;
+    opacity: 0;
+    transition: top 0.3s ease-in-out, opacity 0.4s ease-in-out;
+  }
+  .enteramount-insider.active {
+    top: 0;
+    opacity: 1;
+  }
+
+  .enteramount-input {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .enterProfile-input {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .enterProfile-input input {
+    color: #15171b;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .enteramount-input p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .enteramount-input-name {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-style: dashed;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+    outline: none;
+    color: #15171b;
+  }
+
+  .rate-input {
+    width: 110px;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-style: dashed;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+    outline: none;
+  }
+
+  .start-stop-btn,
+  .create-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  .start-stop-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #556ff7;
+    color: #fff;
+    margin: 0 auto;
+    cursor: pointer;
+    width: 150px;
+  }
+
+  .create-btn button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #556ff7;
+    color: #fff;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .create-btn button:hover {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #556ff7;
+    color: #fff;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .play-img {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .enteramount-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #18191a;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .enteramount-insider {
+    background-color: #1a1c22;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(156, 95, 255, 0.3);
+    top: -100px;
+    opacity: 0;
+    transition: top 0.3s ease-in-out, opacity 0.4s ease-in-out;
+  }
+  .enteramount-insider.active {
+    top: 0;
+    opacity: 1;
+  }
+
+  .enteramount-input {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .enterProfile-input {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .enterProfile-input input {
+    color: #15171b;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .enteramount-input p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .enteramount-input-name {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-style: dashed;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+    outline: none;
+    color: #15171b;
+  }
+
+  .rate-input {
+    width: 110px;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-style: dashed;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+    outline: none;
+  }
+
+  .start-stop-btn,
+  .create-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  .start-stop-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #556ff7;
+    color: #fff;
+    margin: 0 auto;
+    cursor: pointer;
+    width: 150px;
+  }
+
+  .create-btn button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #556ff7;
+    color: #fff;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .create-btn button:hover {
+    background-color: #3d3a50;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+
+  .play-img {
+    margin-left: 20px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .enteramount-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #18191a;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .enteramount-insider {
+    background-color: #1a1c22;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(156, 95, 255, 0.3);
+    top: -100px;
+    opacity: 0;
+    transition: top 0.3s ease-in-out, opacity 0.4s ease-in-out;
+  }
+  .enteramount-insider.active {
+    top: 0;
+    opacity: 1;
+  }
+
+  .enteramount-input {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .enterProfile-input {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .enterProfile-input input {
+    color: #15171b;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .enteramount-input p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .enteramount-input-name {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-style: dashed;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+    outline: none;
+    color: #15171b;
+  }
+
+  .rate-input {
+    width: 110px;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-style: dashed;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+    outline: none;
+  }
+
+  .start-stop-btn,
+  .create-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  .start-stop-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #556ff7;
+    color: #fff;
+    margin: 0 auto;
+    cursor: pointer;
+    width: 150px;
+  }
+
+  .create-btn button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #556ff7;
+    color: #fff;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .create-btn button:hover {
+    background-color: #3d3a50;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+
+  .play-img {
+    margin-left: 20px;
+  }
+}

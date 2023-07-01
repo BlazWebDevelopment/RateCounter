@@ -1,0 +1,60 @@
+@media screen and (max-width: 480px) {
+  .footer-wrapper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #252525;
+    padding: 10px 0;
+    height: 60px;
+    border-top: 1px solid #6f5adc;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+
+  .inside-footer {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+  }
+
+  .home-btn {
+    margin-top: -10px;
+  }
+
+  .profile-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .button-profile {
+    padding-top: 0px;
+  }
+
+  .home-btn:focus,
+  .profile-btn:focus {
+    outline: none;
+  }
+
+  .home-btn img,
+  .profile-btn img {
+    transition: transform 0.2s;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .footer-wrapper {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer-wrapper {
+    display: none;
+  }
+}

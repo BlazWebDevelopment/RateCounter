@@ -1,0 +1,10 @@
+.yir-profile {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 20px;
+}
+.p-tag {
+  margin: 20px;
+}

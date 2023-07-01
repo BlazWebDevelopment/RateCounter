@@ -1,0 +1,215 @@
+@media screen and (max-width: 480px) {
+  .newSession-btn-wrap {
+    margin-top: 70px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+
+  .newSession-btn-active {
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: large;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border: 2px solid #556ff7;
+  }
+
+  .newSession-btn {
+    width: 170px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: none;
+    font-size: large;
+    font-weight: bold;
+    border: 2px solid #6f5adc;
+    border-style: dashed;
+  }
+
+  .newProfile-btn {
+    width: 170px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #6f5adc;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  .newProfile-btn-active {
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #f7f7f7;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+    border: 1px solid #556ff7;
+  }
+  .newProfilebtn-wrap {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+  .more-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .more-btn button {
+    background-color: #6f5adc;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+  }
+  .zero-profiles {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 32px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .newSession-btn-wrap {
+    margin-top: 70px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+
+  .newSession-btn-active {
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: large;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border: 2px solid #556ff7;
+  }
+
+  .newSession-btn {
+    width: 270px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: none;
+    font-size: large;
+    font-weight: bold;
+    border: 2px solid #6f5adc;
+    border-style: dashed;
+  }
+
+  .newProfile-btn {
+    width: 170px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #6f5adc;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  .newProfile-btn-active {
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #f7f7f7;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+    border: 1px solid #556ff7;
+  }
+  .newProfilebtn-wrap {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+  .more-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .more-btn button {
+    background-color: #6f5adc;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+  }
+  .zero-profiles {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 32px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .newSession-btn-wrap {
+    margin-top: 70px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+
+  .newSession-btn-active {
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: large;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border: 2px solid #556ff7;
+  }
+
+  .newSession-btn {
+    width: 270px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: none;
+    font-size: large;
+    font-weight: bold;
+    border: 2px solid #6f5adc;
+    border-style: dashed;
+  }
+
+  .newProfile-btn {
+    width: 170px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #6f5adc;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  .newProfile-btn-active {
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #f7f7f7;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+    border: 1px solid #556ff7;
+  }
+  .newProfilebtn-wrap {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+  .more-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .more-btn button {
+    background-color: #6f5adc;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+  }
+  .zero-profiles {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 32px;
+  }
+}
