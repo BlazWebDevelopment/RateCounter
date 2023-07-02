@@ -29,7 +29,7 @@ interface SessionManagementProps {
 
 const useSessionManagement = (): SessionManagementProps => {
   const [isNewSession, setIsNewSession] = useState(false);
-
+  const [milliseconds, setMilliseconds] = useState(0);
   const [seconds, setSeconds] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [hours, setHours] = useState(0);
@@ -61,11 +61,12 @@ const useSessionManagement = (): SessionManagementProps => {
   };
 
   const calculateRateHandler = useCallback(() => {
-    const totalHours = hours + minutes / 60 + seconds / 3600;
+    const totalHours =
+      hours + minutes / 60 + seconds / 3600 + milliseconds / 3600000;
     const rate = sessionRate * totalHours;
     const formattedRate = rate.toFixed(5);
     setCalculatedRate(+formattedRate);
-  }, [hours, minutes, seconds, sessionRate, setCalculatedRate]);
+  }, [hours, minutes, seconds, sessionRate, milliseconds, setCalculatedRate]);
 
   const test = () => {
     if (hours === 0 && minutes === 0 && seconds >= 0) {
@@ -81,6 +82,7 @@ const useSessionManagement = (): SessionManagementProps => {
 
   const startTimer = () => {
     const id = setInterval(() => {
+      setMilliseconds((prevMilliseconds) => prevMilliseconds + 1);
       setSeconds((prevSeconds) => {
         if (prevSeconds < 59) {
           return prevSeconds + 1;

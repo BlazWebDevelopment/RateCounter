@@ -11,15 +11,19 @@ function SessionView(props: any) {
         </div>
         <div className="inside-session-wrapper">
           <div className="data-wrapper">
-            <p className="rate">
-              RATE &#8594;
-              <span className="numberMoney">{props.calculatedRate}€</span>
-            </p>
+            <div>
+              <p className="rate">
+                RATE =
+                <span className="numberMoney">{props.calculatedRate}€</span>
+              </p>
+            </div>
             <div className="time">
               <span className="hours">{props.hours}</span> :
               <span className="minutes">{props.minutes}</span> :
               <span className="seconds">{props.seconds}</span>
             </div>
+          </div>
+          <div className="date-div">
             <p className="date">Date: {props.date}</p>
           </div>
           <div className="btns">
