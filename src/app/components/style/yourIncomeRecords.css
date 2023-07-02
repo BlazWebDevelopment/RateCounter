@@ -19,7 +19,7 @@
     background-color: #2b2b2b;
     padding: 10px;
     height: 220px;
-    box-shadow: 0 4px 10px #6f5adc;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
   .close-btn-wrapper {
@@ -102,6 +102,7 @@
   .end-start-time {
     display: flex;
     justify-content: center;
+    margin-top: -20px;
   }
   .end-start-time-inside {
     justify-content: center;
@@ -132,7 +133,6 @@
     color: white;
     width: 300px;
     height: 150px;
-    justify-content: center;
     display: inline;
   }
   .left-right-img {
@@ -145,14 +145,11 @@
     border: 1px solid #2b2b2b;
     border-radius: 10px;
     background-color: #2b2b2b;
-    height: 300px;
-    box-shadow: 0px 5px 8px rgb(0, 0, 0);
+    height: 250px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin: 20px auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     width: 600px;
   }
 
@@ -164,6 +161,8 @@
 
   .inside-yourIncome-wrapper {
     margin-top: 20px;
+    display: flex;
+    margin-left: 20px;
   }
 
   .duration-text {
@@ -182,6 +181,11 @@
     font-weight: bold;
     margin-bottom: 10px;
     font-size: 24px;
+    width: 430px;
+  }
+  .end-start-time {
+    margin-left: 0px;
+    margin-top: -50px;
   }
 
   .your-numberMoney {
@@ -221,10 +225,7 @@
   .stope-btn button:hover {
     background-color: #f7f7f7;
   }
-  .end-start-time {
-    display: flex;
-    justify-content: center;
-  }
+
   .end-start-time-inside {
     justify-content: center;
     margin-top: 20px;
@@ -271,7 +272,6 @@
     color: white;
     width: 300px;
     height: 150px;
-    justify-content: center;
     display: inline;
   }
   .left-right-img {
@@ -284,14 +284,11 @@
     border: 1px solid #2b2b2b;
     border-radius: 10px;
     background-color: #2b2b2b;
-    height: 300px;
-    box-shadow: 0px 5px 8px rgb(0, 0, 0);
+    height: 250px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin: 20px auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     width: 600px;
   }
 
@@ -303,6 +300,8 @@
 
   .inside-yourIncome-wrapper {
     margin-top: 20px;
+    display: flex;
+    margin-left: 20px;
   }
 
   .duration-text {
@@ -321,6 +320,11 @@
     font-weight: bold;
     margin-bottom: 10px;
     font-size: 24px;
+    width: 430px;
+  }
+  .end-start-time {
+    margin-left: 0px;
+    margin-top: -50px;
   }
 
   .your-numberMoney {
@@ -360,10 +364,7 @@
   .stope-btn button:hover {
     background-color: #f7f7f7;
   }
-  .end-start-time {
-    display: flex;
-    justify-content: center;
-  }
+
   .end-start-time-inside {
     justify-content: center;
     margin-top: 20px;

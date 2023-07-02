@@ -42,24 +42,25 @@ const NewSession: React.FC<NewSessionProps> = ({ isNewSession, onStart }) => {
         <div className="enteramount-wrapper">
           <div className={`enteramount-insider${isActive ? " active" : ""}`}>
             <div className="enteramount-input">
-              <p>Name</p>
               <input
                 className="enteramount-input-name"
                 type="text"
                 placeholder="Session name"
                 onChange={profileNameHandler}
               />
-              <p>Hourly rate:</p>
-              <input
-                className="rate-input"
-                type="number"
-                name="money"
-                min="0"
-                step="0.01"
-                value={sessionRate === 0 ? "0.00" : sessionRate}
-                required
-                onChange={(e) => setSessionRate(+e.target.value)}
-              />
+              <div className="rate-inp">
+                <input
+                  className="rate-input"
+                  type="number"
+                  name="money"
+                  min="0"
+                  step="0.01"
+                  value={sessionRate === 0 ? "0.00" : sessionRate}
+                  required
+                  onChange={(e) => setSessionRate(+e.target.value)}
+                />
+                <span className="eur">€</span>
+              </div>
             </div>
             {error ? (
               <div

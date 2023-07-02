@@ -34,10 +34,9 @@ const NewProfile = (props: any) => {
       <div className="enteramount-wrapper">
         <div className={`enteramount-insider${isActive ? " active" : ""}`}>
           <div className="enterProfile-input">
-            <p>Create new Profile</p>
             <input
               type="text"
-              placeholder="Enter name"
+              placeholder="Profile name"
               onChange={profileNameHandler}
             />
           </div>

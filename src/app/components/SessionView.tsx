@@ -13,7 +13,7 @@ function SessionView(props: any) {
           <div className="data-wrapper">
             <p className="rate">
               RATE &#8594;
-              <span className="numberMoney">${props.calculatedRate}</span>
+              <span className="numberMoney">{props.calculatedRate}€</span>
             </p>
             <div className="time">
               <span className="hours">{props.hours}</span> :

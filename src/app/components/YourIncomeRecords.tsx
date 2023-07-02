@@ -38,19 +38,19 @@ function YourIncomeRecords(props: any) {
               <p className="your-money">
                 Money earned:
                 <span className="your-moneycollected">
-                  ${props.money_collected}
+                  {props.money_collected}€
                 </span>
               </p>
               <p className="your-date">Date: {props.date}</p>
-              <div className="end-start-time">
-                <div className="end-start-time-inside">
-                  <p className="p1">START</p>
-                  <p className="p2"> {props.start_time}</p>
-                </div>
-                <div className="end-start-time-inside">
-                  <p className="p1">END</p>
-                  <p className="p2"> {props.end_time}</p>
-                </div>
+            </div>
+            <div className="end-start-time">
+              <div className="end-start-time-inside">
+                <p className="p1">START</p>
+                <p className="p2"> {props.start_time}</p>
+              </div>
+              <div className="end-start-time-inside">
+                <p className="p1">END</p>
+                <p className="p2"> {props.end_time}</p>
               </div>
             </div>
           </div>
